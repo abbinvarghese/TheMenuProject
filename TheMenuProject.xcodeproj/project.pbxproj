@@ -22,6 +22,8 @@
 		ED7381F61D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381F51D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m */; };
 		ED7381FB1D3FB56000BE51BA /* NSIndexSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */; };
 		ED7381FC1D3FB56000BE51BA /* UICollectionView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */; };
+		ED7381FF1D3FD75000BE51BA /* TMPAddViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381FE1D3FD75000BE51BA /* TMPAddViewControllerOne.m */; };
+		ED7382021D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7382011D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,10 @@
 		ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Convenience.m"; sourceTree = "<group>"; };
 		ED7381F91D3FB56000BE51BA /* UICollectionView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Convenience.h"; sourceTree = "<group>"; };
 		ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Convenience.m"; sourceTree = "<group>"; };
+		ED7381FD1D3FD75000BE51BA /* TMPAddViewControllerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPAddViewControllerOne.h; sourceTree = "<group>"; };
+		ED7381FE1D3FD75000BE51BA /* TMPAddViewControllerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPAddViewControllerOne.m; sourceTree = "<group>"; };
+		ED7382001D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPAddOneCollectionViewCell.h; sourceTree = "<group>"; };
+		ED7382011D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPAddOneCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,10 @@
 				ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */,
 				ED7381F91D3FB56000BE51BA /* UICollectionView+Convenience.h */,
 				ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */,
+				ED7381FD1D3FD75000BE51BA /* TMPAddViewControllerOne.h */,
+				ED7381FE1D3FD75000BE51BA /* TMPAddViewControllerOne.m */,
+				ED7382001D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.h */,
+				ED7382011D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.m */,
 				ED7381D91D3F995D00BE51BA /* SecondViewController.h */,
 				ED7381DA1D3F995D00BE51BA /* SecondViewController.m */,
 				ED7381EE1D3F9FD600BE51BA /* TMPColor.h */,
@@ -268,10 +278,12 @@
 				ED7381D51D3F995D00BE51BA /* AppDelegate.m in Sources */,
 				ED7381F01D3F9FD600BE51BA /* TMPColor.m in Sources */,
 				ED7381D81D3F995D00BE51BA /* FirstViewController.m in Sources */,
+				ED7382021D3FE0FB00BE51BA /* TMPAddOneCollectionViewCell.m in Sources */,
 				ED7381F61D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m in Sources */,
 				ED7381D21D3F995D00BE51BA /* main.m in Sources */,
 				ED7381FC1D3FB56000BE51BA /* UICollectionView+Convenience.m in Sources */,
 				ED7381F31D3FB0C800BE51BA /* TMPImagePickerController.m in Sources */,
+				ED7381FF1D3FD75000BE51BA /* TMPAddViewControllerOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

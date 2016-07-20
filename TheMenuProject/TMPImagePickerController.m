@@ -10,6 +10,7 @@
 #import "TMPImagePickerCollectionViewCell.h"
 #import "NSIndexSet+Convenience.h"
 #import "UICollectionView+Convenience.h"
+#import "TMPAddViewControllerOne.h"
 @import Photos;
 
 @interface TMPImagePickerController ()<UICollectionViewDelegateFlowLayout,PHPhotoLibraryChangeObserver,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
@@ -122,7 +123,69 @@ static CGSize AssetGridThumbnailSize;
 }
 
 -(void)nextClicked:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (_selectedPHResults.count>0) {
+        [_convertedImaged removeAllObjects];
+        for (PHAsset *asset in _selectedPHResults) {
+            [self.imageManager requestImageDataForAsset:asset
+                                                options:nil
+                                          resultHandler:^(NSData * _Nullable imageData,
+                                                          NSString * _Nullable dataUTI,
+                                                          UIImageOrientation orientation,
+                                                          NSDictionary * _Nullable info) {
+                                              
+                                              UIImage *image = [UIImage imageWithData:imageData];
+                                              [_convertedImaged addObject:image];
+                                              
+                                              if (_convertedImaged.count == _selectedPHResults.count) {
+                                                  [self performSegueWithIdentifier:@"TMPAddViewControllerOneSegue" sender:self];
+                                              }
+                                          }];
+        }
+    }
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
+    if (_selectedPHResults.count>0) {
+        [_convertedImaged removeAllObjects];
+        for (PHAsset *asset in _selectedPHResults) {
+            [self.imageManager requestImageDataForAsset:asset
+                                                options:nil
+                                          resultHandler:^(NSData * _Nullable imageData,
+                                                          NSString * _Nullable dataUTI,
+                                                          UIImageOrientation orientation,
+                                                          NSDictionary * _Nullable info) {
+                                              
+                                              UIImage *image = [UIImage imageWithData:imageData];
+                                              
+                                              [_convertedImaged addObject:image];
+                                              
+                                              if (_convertedImaged.count == _selectedPHResults.count) {
+                                                  [_convertedImaged addObject:chosenImage];
+                                                  [picker dismissViewControllerAnimated:YES completion:^{
+                                                      [self performSegueWithIdentifier:@"TMPAddViewControllerOneSegue" sender:self];
+                                                  }];
+                                              }
+                                          }];
+        }
+    }
+    else{
+        [_convertedImaged addObject:chosenImage];
+        [picker dismissViewControllerAnimated:YES completion:^{
+            [self performSegueWithIdentifier:@"TMPAddViewControllerOneSegue" sender:self];
+        }];
+    }
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"TMPAddViewControllerOneSegue"]) {
+        TMPAddViewControllerOne *newView = segue.destinationViewController;
+        newView.images = _convertedImaged;
+    }
 }
 
 -(void)cancelClicked:(id)sender{
