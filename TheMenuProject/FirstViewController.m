@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc]
+                                   initWithTitle:@"+"
+                                   style:UIBarButtonItemStylePlain
+                                   target:self
+                                   action:@selector(addButtonClicked:)];
+    addButton.tintColor = [UIColor whiteColor];
+    self.navigationItem.rightBarButtonItem = addButton;
+    self.title = @"Nearby";
+}
+
+-(void)addButtonClicked:(id)sender{
+    [self performSegueWithIdentifier:@"TMPImagePickerControllerSegue" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

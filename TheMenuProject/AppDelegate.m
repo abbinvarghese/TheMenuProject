@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "TMPColor.h"
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -16,8 +18,45 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [FIRApp configure];
+    [self initRemoteConfig];
+    [[UITabBar appearance] setTintColor:[TMPColor mainColor]];
+    [[UINavigationBar appearance] setBarTintColor:[TMPColor mainColor]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
     return YES;
+}
+
+-(void)initRemoteConfig{
+    FIRRemoteConfig *remoteConfig = [FIRRemoteConfig remoteConfig];
+    
+#ifdef DEBUG
+    
+    FIRRemoteConfigSettings *remoteConfigSettings = [[FIRRemoteConfigSettings alloc] initWithDeveloperModeEnabled:YES];
+    remoteConfig.configSettings = remoteConfigSettings;
+    
+#endif
+    
+    [remoteConfig setDefaultsFromPlistFileName:@"RemoteConfigDefaults"];
+    long expirationDuration = 3600;
+    // If in developer mode cacheExpiration is set to 0 so each fetch will retrieve values from
+    // the server.
+    if (remoteConfig.configSettings.isDeveloperModeEnabled) {
+        expirationDuration = 0;
+    }
+    
+    // [START fetch_config_with_callback]
+    // cacheExpirationSeconds is set to cacheExpiration here, indicating that any previously
+    // fetched and cached config would be considered expired because it would have been fetched
+    // more than cacheExpiration seconds ago. Thus the next fetch would go to the server unless
+    // throttling is in progress. The default expiration duration is 43200 (12 hours).
+    [remoteConfig fetchWithExpirationDuration:expirationDuration completionHandler:^(FIRRemoteConfigFetchStatus status, NSError *error) {
+        if (status == FIRRemoteConfigFetchStatusSuccess) {
+            [remoteConfig activateFetched];
+        }
+    }];
+    // [END fetch_config_with_callback]
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDC4FD9D126ACBE465AC37B3 /* libPods-TheMenuProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609162A16EF57068659F54C7 /* libPods-TheMenuProject.a */; };
 		ED7381D21D3F995D00BE51BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381D11D3F995D00BE51BA /* main.m */; };
 		ED7381D51D3F995D00BE51BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381D41D3F995D00BE51BA /* AppDelegate.m */; };
 		ED7381D81D3F995D00BE51BA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381D71D3F995D00BE51BA /* FirstViewController.m */; };
@@ -14,9 +15,19 @@
 		ED7381DE1D3F995D00BE51BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7381DC1D3F995D00BE51BA /* Main.storyboard */; };
 		ED7381E01D3F995D00BE51BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7381DF1D3F995D00BE51BA /* Assets.xcassets */; };
 		ED7381E31D3F995D00BE51BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7381E11D3F995D00BE51BA /* LaunchScreen.storyboard */; };
+		ED7381EB1D3F9A6600BE51BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7381EA1D3F9A6600BE51BA /* GoogleService-Info.plist */; };
+		ED7381ED1D3F9C7E00BE51BA /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7381EC1D3F9C7E00BE51BA /* RemoteConfigDefaults.plist */; };
+		ED7381F01D3F9FD600BE51BA /* TMPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381EF1D3F9FD600BE51BA /* TMPColor.m */; };
+		ED7381F31D3FB0C800BE51BA /* TMPImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381F21D3FB0C800BE51BA /* TMPImagePickerController.m */; };
+		ED7381F61D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381F51D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m */; };
+		ED7381FB1D3FB56000BE51BA /* NSIndexSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */; };
+		ED7381FC1D3FB56000BE51BA /* UICollectionView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13FD6A15597CDA5BB48C7EF7 /* Pods-TheMenuProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMenuProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheMenuProject/Pods-TheMenuProject.release.xcconfig"; sourceTree = "<group>"; };
+		19DA869EF0E3F15E7716875A /* Pods-TheMenuProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMenuProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheMenuProject/Pods-TheMenuProject.debug.xcconfig"; sourceTree = "<group>"; };
+		609162A16EF57068659F54C7 /* libPods-TheMenuProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheMenuProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7381CD1D3F995D00BE51BA /* TheMenuProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMenuProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED7381D11D3F995D00BE51BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED7381D31D3F995D00BE51BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +40,18 @@
 		ED7381DF1D3F995D00BE51BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED7381E21D3F995D00BE51BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED7381E41D3F995D00BE51BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7381EA1D3F9A6600BE51BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED7381EC1D3F9C7E00BE51BA /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		ED7381EE1D3F9FD600BE51BA /* TMPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPColor.h; sourceTree = "<group>"; };
+		ED7381EF1D3F9FD600BE51BA /* TMPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPColor.m; sourceTree = "<group>"; };
+		ED7381F11D3FB0C800BE51BA /* TMPImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPImagePickerController.h; sourceTree = "<group>"; };
+		ED7381F21D3FB0C800BE51BA /* TMPImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPImagePickerController.m; sourceTree = "<group>"; };
+		ED7381F41D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPImagePickerCollectionViewCell.h; sourceTree = "<group>"; };
+		ED7381F51D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPImagePickerCollectionViewCell.m; sourceTree = "<group>"; };
+		ED7381F71D3FB56000BE51BA /* NSIndexSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+Convenience.h"; sourceTree = "<group>"; };
+		ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Convenience.m"; sourceTree = "<group>"; };
+		ED7381F91D3FB56000BE51BA /* UICollectionView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Convenience.h"; sourceTree = "<group>"; };
+		ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Convenience.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC4FD9D126ACBE465AC37B3 /* libPods-TheMenuProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4308727735CF4E59DABAA820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609162A16EF57068659F54C7 /* libPods-TheMenuProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCEDF26978187F6CED478D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19DA869EF0E3F15E7716875A /* Pods-TheMenuProject.debug.xcconfig */,
+				13FD6A15597CDA5BB48C7EF7 /* Pods-TheMenuProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED7381C41D3F995D00BE51BA = {
 			isa = PBXGroup;
 			children = (
 				ED7381CF1D3F995D00BE51BA /* TheMenuProject */,
 				ED7381CE1D3F995D00BE51BA /* Products */,
+				CCEDF26978187F6CED478D8F /* Pods */,
+				4308727735CF4E59DABAA820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +108,24 @@
 				ED7381D41D3F995D00BE51BA /* AppDelegate.m */,
 				ED7381D61D3F995D00BE51BA /* FirstViewController.h */,
 				ED7381D71D3F995D00BE51BA /* FirstViewController.m */,
+				ED7381F11D3FB0C800BE51BA /* TMPImagePickerController.h */,
+				ED7381F21D3FB0C800BE51BA /* TMPImagePickerController.m */,
+				ED7381F41D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.h */,
+				ED7381F51D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m */,
+				ED7381F71D3FB56000BE51BA /* NSIndexSet+Convenience.h */,
+				ED7381F81D3FB56000BE51BA /* NSIndexSet+Convenience.m */,
+				ED7381F91D3FB56000BE51BA /* UICollectionView+Convenience.h */,
+				ED7381FA1D3FB56000BE51BA /* UICollectionView+Convenience.m */,
 				ED7381D91D3F995D00BE51BA /* SecondViewController.h */,
 				ED7381DA1D3F995D00BE51BA /* SecondViewController.m */,
+				ED7381EE1D3F9FD600BE51BA /* TMPColor.h */,
+				ED7381EF1D3F9FD600BE51BA /* TMPColor.m */,
 				ED7381DC1D3F995D00BE51BA /* Main.storyboard */,
 				ED7381DF1D3F995D00BE51BA /* Assets.xcassets */,
 				ED7381E11D3F995D00BE51BA /* LaunchScreen.storyboard */,
 				ED7381E41D3F995D00BE51BA /* Info.plist */,
+				ED7381EA1D3F9A6600BE51BA /* GoogleService-Info.plist */,
+				ED7381EC1D3F9C7E00BE51BA /* RemoteConfigDefaults.plist */,
 				ED7381D01D3F995D00BE51BA /* Supporting Files */,
 			);
 			path = TheMenuProject;
@@ -91,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED7381E71D3F995D00BE51BA /* Build configuration list for PBXNativeTarget "TheMenuProject" */;
 			buildPhases = (
+				8B900E5BEE8868987D79E7F5 /* [CP] Check Pods Manifest.lock */,
 				ED7381C91D3F995D00BE51BA /* Sources */,
 				ED7381CA1D3F995D00BE51BA /* Frameworks */,
 				ED7381CB1D3F995D00BE51BA /* Resources */,
+				39D41FB1169A1C08F94FE99D /* [CP] Embed Pods Frameworks */,
+				8C73B9DBB08FA01CF616AAD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +168,7 @@
 		ED7381C51D3F995D00BE51BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TMP;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ThePaadamCompany;
 				TargetAttributes = {
@@ -142,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED7381E31D3F995D00BE51BA /* LaunchScreen.storyboard in Resources */,
+				ED7381ED1D3F9C7E00BE51BA /* RemoteConfigDefaults.plist in Resources */,
+				ED7381EB1D3F9A6600BE51BA /* GoogleService-Info.plist in Resources */,
 				ED7381E01D3F995D00BE51BA /* Assets.xcassets in Resources */,
 				ED7381DE1D3F995D00BE51BA /* Main.storyboard in Resources */,
 			);
@@ -149,15 +210,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39D41FB1169A1C08F94FE99D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMenuProject/Pods-TheMenuProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B900E5BEE8868987D79E7F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C73B9DBB08FA01CF616AAD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheMenuProject/Pods-TheMenuProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED7381C91D3F995D00BE51BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7381FB1D3FB56000BE51BA /* NSIndexSet+Convenience.m in Sources */,
 				ED7381DB1D3F995D00BE51BA /* SecondViewController.m in Sources */,
 				ED7381D51D3F995D00BE51BA /* AppDelegate.m in Sources */,
+				ED7381F01D3F9FD600BE51BA /* TMPColor.m in Sources */,
 				ED7381D81D3F995D00BE51BA /* FirstViewController.m in Sources */,
+				ED7381F61D3FB18400BE51BA /* TMPImagePickerCollectionViewCell.m in Sources */,
 				ED7381D21D3F995D00BE51BA /* main.m in Sources */,
+				ED7381FC1D3FB56000BE51BA /* UICollectionView+Convenience.m in Sources */,
+				ED7381F31D3FB0C800BE51BA /* TMPImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +381,11 @@
 		};
 		ED7381E81D3F995D00BE51BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DA869EF0E3F15E7716875A /* Pods-TheMenuProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheMenuProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThePaadamCompany.TheMenuProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,9 +394,11 @@
 		};
 		ED7381E91D3F995D00BE51BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13FD6A15597CDA5BB48C7EF7 /* Pods-TheMenuProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheMenuProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThePaadamCompany.TheMenuProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +424,7 @@
 				ED7381E91D3F995D00BE51BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
